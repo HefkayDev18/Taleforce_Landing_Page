@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/TaleforceIco.png" type="image/x-icon">
+    <title>TaleforceHQ</title>
+</head>
+
+<body class="bg-white dark:bg-dark">
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-0 px-3 md:px-2 md:p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between max-[280px]:block">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/TaleforceHQ.png" alt="Logo" class="w-full aspect-auto h-16 drop-shadow-md" id="lightLogo">
+                <img src="img/TaleforceDark.png" alt="Logo" class="w-full aspect-auto h-16 hidden" id="darkLogo">
+            </div>
+
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="#pricing"
+                    class="drop-shadow-xl text-secBlue text-md font-bold hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#features" class="drop-shadow-xl text-secBlue text-md font-bold hover:text-darkGrayishBlue"
+                    id="about1">About Us</a>
+                <div class="group relative">
+                    <span class="text-secBlue hover:transition-all hover:text-darkGrayishBlue">
+                        <a href="#" class="drop-shadow-xl text-md font-bold" id="Services1">Services</a>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    <div
+                        class="absolute hidden mt-0 rounded-md space-y-2 bg-white border shadow-xl drop-shadow-lg group-hover:block">
+                        <a href="#"
+                            class="block tracking-wide text-secBlue px-4 py-2 pt-3 text-xs hover:bg-gray-100">Employees</a>
+                        <a href="#"
+                            class="block tracking-wide text-secBlue px-4 py-2 text-xs hover:bg-gray-100">Books</a>
+                    </div>
+                </div>
+                <a href="#documentation" class="drop-shadow-xl text-secBlue text-md font-bold hover:text-darkGrayishBlue">Docs</a>
+            </div>
+
+            <!-- Button -->
+            <!-- <a href="" class="after:content-['*'] after:ml-0.5 after:text-darkGrayishBlue-500 hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block" title="Get Started">
+            Get Started           
+        </a> -->
+            <div class="flex flex-col-reverse mt-10 md:mt-0 md:flex-row">
+                <button type="button" title="toggle" id="toggleDarkMode"
+                    class="bg-secBlue drop-shadow-md text-white p-2 px-3 rounded-full mt-3 hover:bg-pryBlue md:mt-0">
+                    <span><i class="fa fa-moon-o text-xl"></i></span>
+                    <span class="text-xs font-bold">Dark Mode</span>
+                </button>
+
+                <!-- Hamburger Icon -->
+                <button type="button" title="icon" id="menu-btn"
+                    class="block mx-auto hamburger mt-2 md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#pricing" class="text-secBlue">Pricing</a>
+                <a href="#features" class="text-secBlue" id="about">About Us</a>
+                <div class="group relative text-secBlue">
+                    <span class="hover:transition-all">
+                        <a href="#" id="Services">Services</a>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    <div class="absolute hidden z-70 left-16 rounded-md border group-hover:block">
+                        <a href="#" class="block tracking-wide px-4 py-2 text-xs hover:bg-gray-100">Employees</a>
+                        <a href="#" class="block tracking-wide px-4 py-2 text-xs hover:bg-gray-100">Books</a>
+                    </div>
+                </div>
+                <a href="#documentation" class="text-secBlue">Docs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+
+            <!-- Left Side -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-3xl text-secBlue font-bold outline-black text-center md:text-5xl md:text-left">
+                    Navigating the Worlds of Talent and Knowledge.
+                </h1>
+
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                    Taleforce offers efficient and wide-ranging solutions to facilitate the process of employee and
+                    books management,
+                    making it easy for organizations and teams to plan and manage activities while keeping its goals in
+                    view.
+                </p>
+
+                <div class="flex justify-center md:justify-start">
+                    <a href="" class="p-3 px-6 pt-2 text-white bg-secBlue rounded-full baseline hover:bg-pryBlue"
+                        title="Get Started">Get Started</a>
+                </div>
+            </div>
+
+            <!-- <img src="img/illustration-intro.svg" alt="Illustration Image"> -->
+            <!-- Image -->
+            <div class="flex flex-col md:w-1/2">
+                <div class="flex flex-row space-x-2 md:space-x-10">
+                    <img src="img/TaleforceAnim.gif" class="aspect-[4/3] md:img-styles md:aspect-[0] max-[280px]:w-full"
+                        alt="Illustration Image" height="200" width="200">
+                    <img src="img/illustration-vector.jpg"
+                        class="aspect-[4/3] md:img-styles md:aspect-[0] max-[280px]:hidden" alt="Illustration Image"
+                        height="200" width="200">
+                </div>
+
+                <div class="w-full mb-7 mt-2 md:my-1">
+                    <img src="img/illustration-block.jpg"
+                        class="w-1/2 mx-auto aspect-[0] md:img-styles max-[280px]:w-full" alt="Illustration Image"
+                        height="200" width="200">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <!-- Flex container -->
+        <div class="container flex flex-col px-4 mx-auto mt-3 space-y-8 md:space-y-0 md:flex-row">
+            <!-- What's different -->
+            <div class="flex flex-col space-y-12 md:w-1/2">
+                <h2 class="max-w-md text-secBlue text-4xl font-bold text-center md:text-left">
+                    What makes Taleforce different?
+                </h2>
+                <p class="max-w-md text-center tracking-wide text-darkGrayishBlue md:text-left">
+                    Taleforce helps companies and teams streamline its periodic operations to ensure that its goals are
+                    achieved seamlessly by providing the
+                    adequate functionalities your organization or team needs regarding employees and books
+                    management.<br /> Our software is tailor-made to unlock success and
+                    match your needs with an unparalleled efficiency.
+                </p>
+            </div>
+
+            <!-- Numbered List -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- List Item 1-->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading  -->
+                    <div class="rounded-l-full bg-lightBlue md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-freshGray">
+                                01
+                            </div>
+                            <h3 class="text-base text-newGold font-bold md:mb-4 md:hidden">
+                                Manage organizational goals
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="hidden mb-4 text-newGold text-lg font-bold md:block">
+                            Manage organizational goals
+                        </h3>
+
+                        <p class="text-darkGrayishBlue">
+                            Manage your employees one click at a time, with our tailor-made software. It enables
+                            you keep track of your organization or team at different levels, thereby, pushing your
+                            organization
+                            to not losing sight of the bigger picture at any point.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- List Item 2-->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading  -->
+                    <div class="rounded-l-full bg-lightBlue md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-freshGray">
+                                02
+                            </div>
+                            <h3 class="text-base text-newGold font-bold md:mb-4 md:hidden">
+                                Booklist mastery with unmatched efficiency
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="hidden mb-4 text-newGold text-lg font-bold md:block">
+                            Booklist mastery with unmatched efficiency
+                        </h3>
+
+                        <p class="text-darkGrayishBlue">
+                            Our well developed and visually pleasing software facilitates
+                            team growth by creating an avenue for users to manage
+                            their books effectively and also providing a means for users to purchase books from our
+                            store.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- List Item 3-->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Heading  -->
+                    <div class="rounded-l-full bg-lightBlue md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-freshGray">
+                                03
+                            </div>
+                            <h3 class="text-base text-newGold font-bold md:mb-4 md:hidden">
+                                All your needs in one corner, at a glance
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="hidden mb-4 text-newGold text-lg font-bold md:block">
+                            All your needs in one corner, at a glance
+                        </h3>
+
+                        <p class="text-darkGrayishBlue">
+                            With Taleforce, you don't need to shuffle between different services to get satisfaction,
+                            because we offer maximum satisfaction to our customers on all services we offer. We offer an
+                            all encompassing productivity solution to enhance organizational and team growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl sm:text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-center text-secBlue sm:text-4xl">Pricing Details
+                    </h2>
+                    <p class="text-center mt-6 text-md leading-8 text-darkGrayishBlue">
+                        Getting onboarded with our services is a decision you can definitely not regret, below is an
+                        insight
+                        we have shared on what it takes to use our highly functional and visually pleasing software to
+                        satisfy your needs.
+                    </p>
+                </div>
+                <div
+                    class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none bg-white">
+
+                    <!-- Pricing Details -->
+                    <div class="p-8 sm:p-10 lg:flex-auto">
+                        <h3 class="text-2xl font-bold text-center tracking-tight text-secBlue md:text-left">Lifetime
+                            access</h3>
+                        <p class="mt-6 text-base leading-7 text-gray-600">
+                            <b>PAY NOW &Rarr; </b><br /> Access it forever. With a one time payment you get full access
+                            to our software,
+                            anyday and anytime. Get access now so we can start this amazing journey towards achieving
+                            your company or team's goals together.
+                        </p>
+                        <div class="mt-10 flex items-center gap-x-4">
+                            <h4 class="flex-none text-sm font-semibold leading-6 text-newGold">Perks Involved</h4>
+                            <div class="h-px flex-auto bg-gray-100"></div>
+                        </div>
+                        <ul role="list"
+                            class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-pryBlue" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Priority Support
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-pryBlue" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Unlimited Access
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-pryBlue" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Lifetime Updates
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-pryBlue" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Exclusive Features
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pricing Box -->
+                    <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 bg-customSecondaryColor">
+                        <div
+                            class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                            <div class="mx-auto max-w-xs px-8">
+                                <p class="text-base font-semibold text-secBlue">Pay once, own it forever</p>
+                                <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                                    <span class="text-5xl font-bold tracking-tight text-customPrimaryColor">$1500</span>
+                                    <span
+                                        class="text-sm font-semibold leading-6 tracking-wide text-customPrimaryColor">USD</span>
+                                </p>
+                                <a href="#"
+                                    class="mt-10 block w-full rounded-md bg-pryBlue px-3 py-2 text-center text-sm font-semibold text-white drop-shadow-xl shadow-lg hover:bg-secBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Get
+                                    access</a>
+                                <p class="mt-6 text-xs leading-5 text-gray-600">Think Taleforce, think satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="relative overflow-hidden">
+        <!-- heading and blocks -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl text-secBlue drop-shadow-lg font-bold text-center">
+                What Our Customers Say...
+            </h2>
+
+
+            <!-- Testimonials container -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6 md:scrollbar-hide" id="testiCards">
+
+                <!-- Testimonial 1 -->
+                <div
+                    class="singCards shadow-2xl flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="img/avatar-one.jpeg" class="w-16 h-16 -mt-14 rounded-img" alt="">
+
+                    <div class="items">
+                        <h5 class="text-lg font-bold text-newGold ">James Bryan</h5>
+                        <h6 class="italic text-xs">CEO at yarnstacks</h6>
+                    </div>
+
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Taleforce has supercharged our organization's workflow.
+                        With their employee management solutions giving us the ability to maintain visibility on larger
+                        milestones
+                        at all times, we've streamlined our workforce like never before.
+                        It's empowered our teams, improved efficiency, and ultimately, our bottom line.
+                        Taleforce truly understands the challenges CEOs face in today's competitive market."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="singCards shadow-2xl hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-three.jpeg" class="w-16 h-16 -mt-14 rounded-img" alt="">
+
+                    <div class="items">
+                        <h5 class="text-lg font-bold text-newGold ">Matilda Fischer</h5>
+                        <h6 class="italic text-xs">COO at shaks hub</h6>
+                    </div>
+
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Taleforce's employee management platform has revolutionized our operations.
+                        The seamless integration of employee data, filtering, payments, oversight, and a variety of
+                        other functionalities
+                        has significantly reduced our administrative overhead.
+                        We can now focus on driving growth and innovation with confidence. Thank you Taleforce!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    class="singCards shadow-2xl hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-two.jpeg" class="w-16 h-16 -mt-14 rounded-img" alt="">
+
+                    <div class="items">
+                        <h5 class="text-lg font-bold text-newGold ">Kelvin Joe</h5>
+                        <h6 class="italic text-xs">Technical analyst at magic villa</h6>
+                    </div>
+
+                    <p class="text-sm text-darkGrayishBlue">
+                        "As a technical analyst, precision and accuracy are critical.
+                        Taleforce's booklist management tools have been indispensable in organizing our technical
+                        resources.
+                        The ability to access, update, and share information seamlessly has made my job easier and our
+                        technical projects more efficient.
+                        Taleforce has truly transformed our approach to knowledge management."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div
+                    class="singCards shadow-2xl hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-four.jpg" class="w-16 h-16 -mt-14 rounded-img" alt="">
+
+                    <div class="items">
+                        <h5 class="text-lg font-bold text-newGold ">Melinda Stones</h5>
+                        <h6 class="italic text-xs">HR manager at moldtech ltd</h6>
+                    </div>
+
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Taleforce's user-friendly interface has helped transform our HR operations and given us the
+                        ability to seamlessly handle onboarding,
+                        and employee engagement by managing and tracking employee data, allowing us to make data-driven
+                        decisions to improve our workforce.
+                        What truly sets Taleforce apart is their standby support and commitment to understanding our
+                        unique HR challenges and tailoring solutions to meet our specific needs,
+                        which makes them a valuable partner and i highly recommend Taleforce to elevate HR performance."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="my-16">
+                <a href=""
+                    class="p-3 px-6 pt-2 text-white bg-secBlue rounded-full shadow-2xl drop-shadow-xl hover:bg-pryBlue"
+                    title="Get Started">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="documentation">
+        <div class="py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto w-full sm:text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-center text-secBlue sm:text-4xl">Our Documentation
+                    </h2>
+                    <p class="text-center mt-6 text-md leading-8 text-darkGrayishBlue text-overflow hover:remove-overflow" title="Place cursor on text to view more">
+                        Our fully functional, responsive and visually appealing website was developed using software technologies such as 
+                        Html, Css, TailwindCSS and Javascript. It is fully responsive on all screen types and has been fully tested.
+                        The website is a landing page to our applications and gives you an insight to what we are about at Taleforce.
+                        Embark on this exciting journey with us today!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section id="cta" class="bg-secBlue">
+        <!-- Flex container -->
+        <div
+            class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Simplify how your team works today
+            </h2>
+
+            <!-- Button -->
+            <div>
+                <a href=""
+                    class="p-3 px-6 pt-2 text-secBlue bg-white rounded-full shadow-2xl baseline hover:bg-gray-300"
+                    title="Get Started">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-footerGray">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links -->
+            <div
+                class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+                <div class="mx-auto my-6 text-newGold text-xs text-center text-white md:hidden">
+                    Copyright &copy; TaleforceHQ 2023, All Rights Reserved
+                </div>
+
+                <!-- Logo -->
+                <div>
+                    <img src="img/TaleforceFooter.png" alt="" class="">
+                </div>
+
+                <!-- Social Links -->
+
+                <div class="flex justify-center space-x-4">
+
+                    <a href="https://www.linkedin.com/in/farouk-lawal-b127a2199/" title="Linkedin">
+                        <img src="img/linkedin.jpg" alt="Linkedin" class="rounded-lg h-8">
+                    </a>
+
+                    <a href="mailto:farouk.lawal2017@yahoo.com" title="facebook">
+                        <img src="img/icon-facebook.svg" alt="facebook" class="h-8">
+                    </a>
+
+                    <a href="mailto:farouk.lawal2017@yahoo.com" title="YouTube">
+                        <img src="img/icon-youtube.svg" alt="YouTube" class="h-8">
+                    </a>
+
+                    <a href="mailto:farouk.lawal2017@yahoo.com" title="X (formerly twitter)">
+                        <img src="img/icon-twitter.svg" alt="X (formerly twitter)" class="bg-white rounded-lg h-8">
+                    </a>
+
+                    <a href="mailto:farouk.lawal2017@yahoo.com" title="Instagram">
+                        <img src="img/icon-instagram.svg" alt="Instagram" class="h-8">
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Flex Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col ml-2 space-y-3 text-white">
+                    <a href="#hero" class="text-newGold font-bold hover:text-pryBlue">Home</a>
+                    <a href="#pricing" class="text-newGold font-bold hover:text-pryBlue">Pricing</a>
+                    <a href="#Services1" class="text-newGold font-bold hover:text-pryBlue">Services</a>
+                    <a href="#features" class="text-newGold font-bold hover:text-pryBlue">About Us</a>
+                </div>
+
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="text-newGold font-bold hover:text-pryBlue no-copy">Partners</a>
+                    <a href="#" class="text-newGold font-bold hover:text-pryBlue no-copy">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between max-[280px]:-ml-5 max-[280px]:aspect-auto">
+                <form>
+                    <div class="flex space-x-3 max-[280px]:space-x-1">
+                        <input type="text" class="flex-1 px-4 text-sm rounded-full focus:outline-none"
+                            placeholder="Updated in your inbox" />
+                        <button type="button"
+                            class="px-6 py-2 text-white rounded-full bg-secBlue hover:bg-pryBlue focus:outline-none">
+                            Go
+                        </button>
+                    </div>
+                </form>
+
+                <div class="hidden my-10 text-white text-xs md:block md:text-newGold">
+                    Copyright &copy; TaleforceHQ 2023, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
